@@ -2,7 +2,7 @@ import TestimonialCard from "./components/testimonial-card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-linear-to-b from-slate-50 to-slate-200 p-6">
+    <main className="flex min-h-screen items-start justify-center bg-linear-to-b from-gray-50 to-[#d2d6db] px-6 py-[200px]">
       <TestimonialCard
         name="Sarah Dole"
         handle="@sarahdole"

@@ -16,7 +16,7 @@ export default function TestimonialCard({
   imageAlt = "testimonial thumbnail",
 }: TestimonialCardProps) {
   return (
-    <div className="flex w-[21rem] max-w-xs flex-col gap-4 rounded-lg bg-white p-6 shadow-[0_12px_30px_rgba(15,23,42,0.08)]">
+    <div className="flex w-full max-w-85 h-58.25 flex-col gap-4 rounded-lg bg-white p-6 shadow-[0px_1px_2px_-1px_rgb(0_0_0/0.10),0px_1px_3px_0_rgb(0_0_0/0.10)]">
       <div className="flex items-center gap-4">
         <Image
           className="h-12 w-12 rounded-full object-cover"
@@ -28,14 +28,14 @@ export default function TestimonialCard({
         />
 
         <div className="flex flex-col">
-          <p className="text-lg font-semibold text-neutral-900">{name}</p>
-          <p className="text-sm font-normal text-neutral-600">{handle}</p>
+          <span className="text-lg font-semibold text-justify text-neutral-900 leading-7 pb-px">{name}</span>
+          <span className="text-sm font-normal text-neutral-600 leading-5">{handle}</span>
         </div>
       </div>
 
-      <p className="text-base font-normal leading-7 text-neutral-600">
+      <span className="text-base font-normal text-neutral-600 leading-6">
         {quote}
-      </p>
+      </span>
     </div>
   );
 }
